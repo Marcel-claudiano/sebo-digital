@@ -50,7 +50,10 @@ test("a busca trata o texto digitado como dado, nunca como comando (item 8)", ()
 });
 
 test("o catálogo filtrado por poesia mostra só livros de poesia", () => {
-  const html = site.gerarPaginaCatalogo({ categoria: "poesia" });
+  // Tira o "Destaque agora", que sorteia um livro de qualquer categoria
+  // (às vezes sorteava o Dom Casmurro e o teste falhava sem motivo).
+  const html = site.gerarPaginaCatalogo({ categoria: "poesia" })
+    .replace(/<p class="aviso-destaque">[\s\S]*?<\/p>/, "");
   assert.match(html, /Antologia Poética/);
   assert.doesNotMatch(html, /Dom Casmurro/);
 });
