@@ -31,4 +31,4 @@ INSERT INTO livros (id, titulo, autor, categoria, preco, estoque, conservacao, d
 INSERT INTO livros (id, titulo, autor, categoria, preco, estoque, conservacao, descricao) VALUES
   (6, 'Claro Enigma', 'Carlos Drummond de Andrade', 'poesia', 22.00, 0, 'Bom estado', 'Livro de poemas de tom reflexivo, com formas mais clássicas do que as obras anteriores do autor.');
 INSERT INTO livros (id, titulo, autor, categoria, preco, estoque, conservacao, descricao) VALUES
-  (7, 'Vidas Secas', 'Graciliano Ramos', 'romance', 27.50, 2, 'Bom estado, capa com pequenos amassados', 'A história de Fabiano e sua família fugindo da seca pelo sertão nordestino.');
+  (7, 'Vidas Secas', 'TESTE', 'romance', 27.50, 2, 'Bom estado, capa com pequenos amassados', 'teste.');
